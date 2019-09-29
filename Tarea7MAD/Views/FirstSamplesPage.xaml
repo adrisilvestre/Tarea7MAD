@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:helper="clr-namespace:Tarea7MAD.Helpers"
+             mc:Ignorable="d"
+             x:Class="Tarea7MAD.Views.FirstSamplesPage"
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasBackButton="False"
+             Title="Tips and Tricks">
+    <ContentPage.Content>
+
+        
+        <StackLayout Padding="20">
+            <Label HorizontalOptions="StartAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Made with love by: "/>
+                        <Span Text="{Binding Source={x:Static helper:Settings.AuthorAS}}"
+                              FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Style="{StaticResource LabelStyle1}">
+                <Label.Text>
+                    Are you a human? 
+                If so...Fill the blanks and press the button below.
+                </Label.Text>
+            </Label>
+            <Label Text="This is a messy page, but a messy page with a lot of knowledge."/>
+
+
+            <Button Text="I am a Human" Command="{Binding IsClickedCommand}"/>
+            <StackLayout IsVisible="False">
+                <StackLayout.Triggers>
+                    <DataTrigger TargetType="StackLayout"
+                                 Binding="{Binding IsMagic}"
+                                 Value="true">
+                        <Setter Property="IsVisible" Value="True"/>
+                    </DataTrigger>
+                </StackLayout.Triggers>
+                <Label Text="You're awesome!"/>
+            </StackLayout>
+
+            <Label Text="Line breaks: &#10; It's cool to be smart... &#10; but it's cooler being humble."
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Visual States"/>
+
+            <Entry Placeholder="Enabled" 
+                   IsEnabled="True"/>
+
+
+            <Entry Placeholder="Disabled" 
+                   IsEnabled="False"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
