@@ -9,10 +9,11 @@
              NavigationPage.HasNavigationBar="True"
              NavigationPage.HasBackButton="False"
              Title="Tips and Tricks">
+    
     <ContentPage.Content>
 
-        
         <StackLayout Padding="20">
+            
             <Label HorizontalOptions="StartAndExpand">
                 <Label.FormattedText>
                     <FormattedString>
