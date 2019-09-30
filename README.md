@@ -12,14 +12,14 @@
 ![](images/P2.jpeg)\
 ![](images/P3.jpeg)\
 
-**Tip 3: Using Attached Properties**\
+**Tip 3: Using Attached Properties**
 ![](images/P4.jpeg)\
 
-**Tip 4: Adding generic styles**\
+**Tip 4: Adding generic styles**
 ![](images/P5.jpeg)\
 
-**Tip 7: Triggers (and styles)**\
+**Tip 7: Triggers (and styles)**
 ![](images/P6.jpeg)\
 
-**Tip 9: Line break**\
+**Tip 9: Line break**
 ![](images/P7.jpeg)\
